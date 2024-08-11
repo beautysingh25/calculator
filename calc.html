@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        
+            <input type="text" readonly class="screen" id="scrn">
+        
+        <div class="tab-container">
+            <button class="tab" onclick="
+            currentDisplay='';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">C</button>
+
+            <button class="tab" onclick="
+            currentDisplay += 'X';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">X</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '%';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">%</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '/';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">/</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '*';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">*</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '7';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">7</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '8';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">8</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '9';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">9</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '4';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">4</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '+';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">+</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '5';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">5</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '6';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">6</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '1';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">1</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '2';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">2</button>
+            <button class="tab" onclick="
+            currentDisplay += '-';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">-</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '3';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">3</button>
+
+            
+
+            <button class="tab" onclick="
+            currentDisplay += '0';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">0</button>
+
+            <button class="tab" onclick="
+            currentDisplay += '.';
+            document.querySelector('#scrn').value = currentDisplay;
+            ">.</button>
+
+            <button class="tab" onclick="
+            currentDisplay = eval(currentDisplay);
+            document.querySelector('#scrn').value = currentDisplay;
+            ">=</button>
+
+            <button class="tab" onclick="
+            currentDisplay = Math.round(currentDisplay);
+            document.querySelector('#scrn').value = currentDisplay;
+            ">R</button>
+
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
